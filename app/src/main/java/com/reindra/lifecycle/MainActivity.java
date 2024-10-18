@@ -41,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 String inputLength = edtLength.getText().toString().trim();
                 String inputWidth = edtWidth.getText().toString().trim();
                 String inputHeight = edtHeight.getText().toString().trim();
-                boolean isEmptyFields = false;
+//                boolean isEmptyFields = false;
+
+                double volume = Double.parseDouble(inputLength) * Double.parseDouble(inputWidth) * Double.parseDouble(inputHeight);
+                tvResult.setText(String.valueOf(volume));
             }
         });
 
